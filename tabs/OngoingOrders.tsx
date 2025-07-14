@@ -11,7 +11,7 @@ import { useNavigation } from 'expo-router';
 import { NavigationProp } from '@react-navigation/native';
 
 const  OngoingOrders = () => {
-  const [orders, setOrders] = useState(ongoingOrders);
+  const [orders] = useState(ongoingOrders);
   const refRBSheet = useRef<any>(null);
   const { dark } = useTheme();
   const navigation = useNavigation<NavigationProp<any>>();

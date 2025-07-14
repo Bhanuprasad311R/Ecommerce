@@ -140,7 +140,7 @@ const ProductReviews = () => {
     /*
     ** render content
     */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [selectedRating, setSelectedRating] = useState("All");
 
         const renderRatingButton = (rating: any) => (
@@ -193,7 +193,7 @@ const ProductReviews = () => {
         <SafeAreaView style={[styles.area, { backgroundColor: colors.background }]}>
             <View style={[styles.container, { backgroundColor: colors.background }]}>
                 {renderHeader()}
-                {renderContent()}
+                {RenderContent()}
             </View>
             {renderModal()}
         </SafeAreaView>

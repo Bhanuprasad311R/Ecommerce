@@ -67,7 +67,7 @@ const JewelryDetails = () => {
     /**
      * render content
      */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [selectedColor, setSelectedColor] = useState(null);
         const [quantity, setQuantity] = useState(1);
 
@@ -206,7 +206,7 @@ const JewelryDetails = () => {
             <AutoSlider images={sliderImages} />
             {renderHeader()}
             <ScrollView showsVerticalScrollIndicator={false}>
-                {renderContent()}
+                {RenderContent()}
             </ScrollView>
             <View style={[styles.cartBottomContainer, {
                 backgroundColor: dark ? COLORS.dark1 : COLORS.white,

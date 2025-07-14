@@ -147,7 +147,7 @@ const Search = () => {
                 <>
                   <Text style={[styles.tabText, {
                     color: dark ? COLORS.secondaryWhite : COLORS.black
-                  }]}>Result for "{searchQuery}"</Text>
+                  }]}>Result for &quot;{searchQuery}&quot;</Text>
                 </>
               ) : (
                 <Text style={[styles.tabText, {

@@ -16,7 +16,7 @@ const CancelOrder = () => {
     /***
      * Render content
     */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [comment, setComment] = useState("");
         const [selectedItem, setSelectedItem] = useState(null);
 
@@ -107,7 +107,7 @@ const CancelOrder = () => {
                 <ScrollView
                     showsVerticalScrollIndicator={false}
                 >
-                    {renderContent()}
+                    {RenderContent()}
                 </ScrollView>
             </View>
             {renderSubmitButton()}

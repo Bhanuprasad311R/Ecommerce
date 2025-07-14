@@ -52,7 +52,7 @@ const Profile = () => {
   /**
    * Render User Profile
    */
-  const renderProfile = () => {
+  const RenderProfile = () => {
     const [image, setImage] = useState(images.user1)
 
     const pickImage = async () => {
@@ -88,7 +88,7 @@ const Profile = () => {
   /**
    * Render Settings
    */
-  const renderSettings = () => {
+  const RenderSettings = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
@@ -230,8 +230,8 @@ const Profile = () => {
       <View style={[styles.container, { backgroundColor: colors.background }]}>
         {renderHeader()}
         <ScrollView showsVerticalScrollIndicator={false}>
-          {renderProfile()}
-          {renderSettings()}
+          {RenderProfile()}
+          {RenderSettings()}
         </ScrollView>
       </View>
       <RBSheet

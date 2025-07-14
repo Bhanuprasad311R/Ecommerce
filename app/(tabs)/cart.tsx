@@ -77,7 +77,7 @@ const Cart: React.FC = () => {
 
     useEffect(() => {
       setResultsCount(filteredProducts.length);
-    },[myCartProducts, selectedCategories]);
+    }, [myCartProducts, selectedCategories]);
 
     // Category item
     const renderCategoryItem = ({ item }: { item: { id: string; name: string } }) => (

@@ -192,7 +192,7 @@ const ForgotPasswordPhoneNumber = () => {
                 <View style={styles.bottomContainer}>
                     <Text style={[styles.bottomLeft, {
                         color: dark ? COLORS.white : COLORS.black
-                    }]}>Don't have an account ?</Text>
+                    }]}>Don&apos;t have an account ?</Text>
                     <TouchableOpacity
                         onPress={() => navigate("signup")}
                     >

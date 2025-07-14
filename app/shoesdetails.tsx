@@ -66,7 +66,7 @@ const ShoesDetails = () => {
     /**
      * render content
      */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [selectedSize, setSelectedSize] = useState(null);
         const [selectedColor, setSelectedColor] = useState(null);
         const [quantity, setQuantity] = useState(1);
@@ -242,7 +242,7 @@ const ShoesDetails = () => {
             <AutoSlider images={sliderImages} />
             {renderHeader()}
             <ScrollView showsVerticalScrollIndicator={false}>
-                {renderContent()}
+                {RenderContent()}
             </ScrollView>
             <View style={[styles.cartBottomContainer, {
                 backgroundColor: dark ? COLORS.dark1 : COLORS.white,

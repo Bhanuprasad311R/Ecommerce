@@ -65,7 +65,7 @@ const ElectronicsDetails = () => {
     /**
      * render content
      */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [selectedColor, setSelectedColor] = useState(null);
         const [quantity, setQuantity] = useState(1);
 
@@ -204,7 +204,7 @@ const ElectronicsDetails = () => {
             <AutoSlider images={sliderImages} />
             {renderHeader()}
             <ScrollView showsVerticalScrollIndicator={false}>
-                {renderContent()}
+                {RenderContent()}
             </ScrollView>
             <View style={[styles.cartBottomContainer, {
                 backgroundColor: dark ? COLORS.dark1 : COLORS.white,

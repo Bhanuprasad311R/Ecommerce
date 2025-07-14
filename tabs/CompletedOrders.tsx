@@ -8,7 +8,7 @@ import { useNavigation } from 'expo-router';
 import { NavigationProp } from '@react-navigation/native';
 
 const CompletedOrders = () => {
-  const [orders, setOrders] = useState(completedOrders);
+  const [orders] = useState(completedOrders);
   const { dark } = useTheme();
   const navigation = useNavigation<NavigationProp<any>>();
 

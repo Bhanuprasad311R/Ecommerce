@@ -65,7 +65,7 @@ const KitchenDetails = () => {
     /**
      * render content
      */
-    const renderContent = () => {
+    const RenderContent = () => {
         const [quantity, setQuantity] = useState(1);
 
         const increaseQty = () => {
@@ -170,7 +170,7 @@ const KitchenDetails = () => {
             <AutoSlider images={sliderImages} />
             {renderHeader()}
             <ScrollView showsVerticalScrollIndicator={false}>
-                {renderContent()}
+                {RenderContent()}
             </ScrollView>
             <View style={[styles.cartBottomContainer, {
                 backgroundColor: dark ? COLORS.dark1 : COLORS.white,
