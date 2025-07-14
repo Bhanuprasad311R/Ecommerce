@@ -17,6 +17,7 @@
       "backgroundColor": "#101010"
     },
     "android": {
+      "package": "com.bhanu311r.evira",  
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#101010"
